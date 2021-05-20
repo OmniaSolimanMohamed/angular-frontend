@@ -1,0 +1,24 @@
+<div class="container-md">
+<div class="m-3">
+<app-navbar></app-navbar>
+
+</div>
+<div class="m-3">
+<app-home-header ></app-home-header>
+</div>
+
+<div class="row">
+<!-- <app-home-body></app-home-body> -->
+<app-home-body 
+class="col-lg-3 col-md-4 col-sm-6 col-12 mb-3"
+*ngFor="let p of products" 
+[product]="p"></app-home-body>
+
+</div>
+<div class="m-3">
+
+<app-home-footer></app-home-footer>
+</div>
+
+</div>
+
